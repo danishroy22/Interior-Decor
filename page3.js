@@ -5,7 +5,6 @@ let currentTranslate = 0;
 let prevTranslate = 0;
 let animationID;
 let currentIndex = 0;
-const slides = carousel.children; // Get the children (slides) of the carousel
 
 // Prevent context menu on long press
 carousel.addEventListener('contextmenu', (e) => e.preventDefault());
@@ -38,13 +37,9 @@ function endDrag() {
     isDragging = false;
     const movedBy = currentTranslate - prevTranslate;
 
-    // If moved enough, shift carousel to next or previous slide
-    if (movedBy < -100 && currentIndex < slides.length - 1) {
-        currentIndex += 1; // Move to next slide
-    }
-    if (movedBy > 100 && currentIndex > 0) {
-        currentIndex -= 1; // Move to previous slide
-    }
+    // Update index based on drag amount
+    if (movedBy < -100 && currentIndex < carousel.childElementCount - 3) currentIndex += 1;
+    if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
 
     setPositionByIndex();
 }
@@ -63,14 +58,10 @@ function setSliderPosition() {
 }
 
 function setPositionByIndex() {
-    // Calculate the new position based on the index of the current slide
-    currentTranslate = currentIndex * -carousel.clientWidth / slides.length; // Divide by number of slides for equal spacing
-    prevTranslate = currentTranslate; // Store the previous position
-    carousel.style.transition = 'transform 0.5s ease'; // Add transition for smooth sliding
+    currentTranslate = currentIndex * -carousel.clientWidth / 4; // Adjust based on item width
+    prevTranslate = currentTranslate;
     carousel.style.transform = `translateX(${currentTranslate}px)`;
-
-    // Reset the transition after the animation is complete
-    setTimeout(() => {
-        carousel.style.transition = 'none'; // Disable transition for the next drag
-    }, 500);
 }
+
+// Initialize position
+setPositionByIndex();

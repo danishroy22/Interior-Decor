@@ -7,27 +7,48 @@ body {
     color: black;
 }
 
-/* Carousel Styles */
 .carousel-container {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 300%; /* 3 slides, adjust based on the number of slides */
-    gap: 50px;
-    box-shadow: black;
+    gap: 10px; /* Space between the images */
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 800px; /* Max width for the carousel */
 }
 
-.carousel img {
-    width: 10%;
-    height: auto;
+.carousel-item {
+    flex: 0 0 auto;
+    width: 150px; /* Fixed width for the images */
+    height: 200px; /* Increased height to accommodate text */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center; /* Center the text */
 }
 
+.carousel-item img {
+    width: 100%;
+    height: 150px; /* Keep image height fixed */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-text {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: black;
+}
 
 /* Add to Cart Section */
 .add-to-cart-section {
