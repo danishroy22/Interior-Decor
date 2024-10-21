@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #eec55c;
+    color: black;
+}
+
+/* Image Section */
+.image-row {
+    display: flex;
+}
+
+.image-row img {
+    width: 50%;
+    height: auto;
+}
+
+/* Text Section */
+.text-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+}
+
+/* Custom Image Section */
+.custom-image-section {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Custom Image Section */
+.custom-image-section {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.custom-image-section img {
+    width: 100%;
+    border-radius: 0 0 20px 20px; /* Adjust corners as needed */
+}
+
+/* Navigation Layer */
+.navigation-layer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    background-color: #000000; /* Mustard shade */
+    border: none;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b88c14; /* Darker mustard for hover effect */
+}

@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #D4A017; /* Mustard shade */
+    color: black;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* 3 slides, adjust based on the number of slides */
+    gap: 50px;
+    box-shadow: black;
+}
+
+.carousel img {
+    width: 10%;
+    height: auto;
+}
+
+
+/* Add to Cart Section */
+.add-to-cart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.add-to-cart-section button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    color: rgb(83, 83, 83);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.add-to-cart-section button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.add-to-cart-section .quantity-button {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(72, 72, 72);
+}
+.Premium{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    color: rgb(83, 83, 83);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.premiumdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+/* Heading */
+.page-heading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+/* Gallery View */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    border-radius: 10px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.gallery > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out sections */
+    align-items: flex-start; /* Align items at the start */
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.left-section {
+    width: 25%; /* Adjust width as needed for left and right sections */
+    padding: 20px; /* Padding for inner content */
+}
+
+.right-section {
+    width: 25%; /* Adjust width as needed for left and right sections */
+    padding: 20px; /* Padding for inner content */
+}
+
+.middle-section {
+    width: 50%; /* Adjust width for the middle section */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.top-half,
+.bottom-half {
+    flex: 1; /* Make both halves take equal space */
+    display: flex; /* Flex to center buttons */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Padding for inner content */
+}
+
+.add-to-cart-button img {
+    vertical-align: middle; /* Align the cart icon with text */
+    margin-right: 5px; /* Space between icon and text */
+}
+.add-to-cart-button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    color: rgb(83, 83, 83);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.button {
+    background-color: black;
+    color: #D4A017;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.imagep{
+    width: 40%;
+
+}

@@ -1,0 +1,203 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eec55c; /* Mustard-like yellow */
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #eec55c;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+/* Navbar */
+nav {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Pictures Section */
+.pictures {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Overlapping pictures */
+.picture1, .picture2 {
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.picture1 {
+    top: -40px;
+    right: -30px;
+    z-index: 1;
+}
+
+.picture2 {
+    top: 40px;
+    left: -10px;
+    z-index: 2;
+}
+
+/* Interior Design Section */
+.content {
+    margin: 200px 0 50px 0;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+}
+
+.content button {
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Single Picture Section */
+.single-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 50px 0;
+}
+
+.rounded-picture {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.navigation-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.navigation-buttons button {
+    background-color: black;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Newsletter Card */
+.newsletter-card {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: -10px;
+    border-top: 1px solid black; /* Only the top border */
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    text-align: justify;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter-card h3 {
+    margin: 0 0 0px;
+}
+
+/* Email Input Section */
+.email-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: -30px;
+}
+
+.email-input input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    flex: 1;
+}
+
+.email-input button {
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #eec55c;
+    color: #000000;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}

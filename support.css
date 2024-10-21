@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box; /* For consistent box-sizing */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Support Page Styles */
+.support-page {
+    background-image: url('img/IMG-20241020-WA0023.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foreground {
+    background-color: rgba(0, 0, 0, 0.6); /* Translucent black */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; 
+    height: 100vh;
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Subheading */
+.subheading {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+/* Description Text */
+.description {
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.support-button {
+    background-color: rgba(0, 0, 0, 0.4); /* Translucent black */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.support-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter on hover */
+}
+
+/* Right Aligned Button Group */
+.right-aligned {
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.decline-button {
+    background-color: rgba(0, 0, 0, 0.463); /* Black button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.accept-button {
+    background-color: rgba(255, 255, 255, 0.651); /* White button */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.7); /* Same translucent black */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
