@@ -198,3 +198,15 @@ body {
     width: 40%;
 
 }
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff; /* Or another color to match your design */
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
